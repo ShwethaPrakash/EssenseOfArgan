@@ -1,0 +1,103 @@
+﻿@model IList<Repository.Models.Order>
+
+@{
+    ViewBag.Title = "Orders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Order</h2>
+
+@using (Html.BeginForm("Index", "Order", FormMethod.Post))
+{
+<table class="table">
+    <tr>
+        <th>
+
+        </th>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            State
+        </th>
+        <th>
+            Country
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Product
+        </th>
+        <th>
+            SKU
+        </th>
+        <th>
+            Quantity
+        </th>
+        <th>
+            Category
+        </th>
+        <th></th>
+    </tr>
+
+    @for (int i=0;i<Model.Count;i++)
+    {
+<tr>
+    <td>
+        @Html.CheckBoxFor(x => x[i].IsSelected)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].FirstName)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].LastName)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].Address)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].City)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].State)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].Country)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].Price)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].ProductName)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].SKU)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].Quantity)
+    </td>
+    <td>
+        @Html.TextBoxFor(x => x[i].Category)
+    </td>
+</tr>
+
+    }
+    <tr>
+        <td>
+            <input type="submit" value="Proceed To Ship" />
+        </td>
+    </tr>
+</table>
+}
+
+

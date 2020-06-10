@@ -1,0 +1,67 @@
+﻿[
+  {
+    "ShipmentId": "ShipmentID-1",
+    "FirstName": "Jeff",
+    "LastName": "Cheung",
+    "Address": "150 Golf Course Rd",
+    "City": "South Burlington",
+    "State": "VT",
+    "Country": "USA",
+    "Products": [
+      {
+        "ProductName": "Argan Product",
+        "SKU": "Argan",
+        "Description": null,
+        "Category": null,
+        "Price": 9.9900,
+        "Quantity": null
+      },
+      {
+        "ProductName": "Argan Product 2",
+        "SKU": "Argan2",
+        "Description": null,
+        "Category": null,
+        "Price": 9.9900,
+        "Quantity": null
+      }
+    ]
+  },
+  {
+    "ShipmentId": "ShipmentID-2",
+    "FirstName": "Jeff",
+    "LastName": "Cheung",
+    "Address": "150 Golf Course Rd",
+    "City": "South Burlington",
+    "State": "VT",
+    "Country": "USA",
+    "Products": [
+      {
+        "ProductName": "Idro Product",
+        "SKU": "Idro",
+        "Description": null,
+        "Category": null,
+        "Price": 4.9900,
+        "Quantity": null
+      }
+    ]
+  },
+  {
+    "ShipmentId": "ShipmentID-3",
+    "FirstName": "Jeff",
+    "LastName": "Cheung",
+    "Address": "150 Dorset St Ste 245-236",
+    "City": "South Burlington",
+    "State": "VT",
+    "Country": "USA",
+    "Products": [
+      {
+        "ProductName": "Argan Product",
+        "SKU": "Argan",
+        "Description": null,
+        "Category": null,
+        "Price": 9.9900,
+        "Quantity": null
+      }
+    ]
+  }
+]
